@@ -3,11 +3,35 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="com.demoauto.qa.testcases.loginpagetest">
+        <methods>
+          <include name="logotest"/>
+          <include name="entertest"/>
+          <include name="signinbuttontest"/>
+          <include name="setup"/>
+          <include name="loginpagetitletest"/>
+          <include name="skipsigninbuttontest"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.demoauto.qa.testcases.loginpagetest -->
+      <class name="com.demoauto.qa.testcases.alertspagetest">
+        <methods>
+          <include name="altpagetitletest"/>
+          <include name="altpagelogotest"/>
+          <include name="teardown"/>
+          <include name="alttexttest"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.demoauto.qa.testcases.alertspagetest -->
       <class name="com.demoauto.qa.testcases.registerpagetest">
         <methods>
+          <include name="regpagelogotest"/>
           <include name="teardown"/>
           <include name="setup"/>
+          <include name="regpagetitletest"/>
           <include name="switchtolinktest"/>
+          <include name="formfilltest"/>
+          <include name="hmpglinktest"/>
         </methods>
       </class> <!-- com.demoauto.qa.testcases.registerpagetest -->
     </classes>

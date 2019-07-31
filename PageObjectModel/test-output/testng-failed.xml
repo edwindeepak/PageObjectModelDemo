@@ -3,13 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.demoauto.qa.testcases.registerpagetest">
+      <class name="com.demoauto.qa.testcases.alertspagetest">
         <methods>
+          <include name="altpagetitletest"/>
+          <include name="altpagelogotest"/>
           <include name="teardown"/>
+          <include name="alttexttest"/>
           <include name="setup"/>
-          <include name="formfilltest" invocation-numbers="0 1 2 3 4"/>
         </methods>
-      </class> <!-- com.demoauto.qa.testcases.registerpagetest -->
+      </class> <!-- com.demoauto.qa.testcases.alertspagetest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
