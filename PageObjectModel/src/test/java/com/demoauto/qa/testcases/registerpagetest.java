@@ -36,17 +36,17 @@ public class registerpagetest extends TestBase {
 		}
 	
 	
-	@Test(priority = 1,enabled = false)
+	@Test(priority = 1)
 	public void regpagetitletest() {
 		String title  = registerpage.validateregpagetitle();
 		Assert.assertEquals(title, "Register");
 	}
-	@Test(priority = 2,enabled = false)
+	@Test(priority = 2)
 	public void regpagelogotest() {
 		boolean flag=registerpage.validateregpagelogo();
 		Assert.assertTrue(flag);
 	}
-	@Test(priority = 3, enabled = false)
+	@Test(priority = 3)
 	public void hmpglinktest() {
 		loginpage = registerpage.homepagelink();
 	}
@@ -61,7 +61,7 @@ public class registerpagetest extends TestBase {
 		
 	}
 	
-	@Test(priority = 5,enabled = false)
+	@Test(priority = 5)
 	public void switchtolinktest() {
 		alertspage = registerpage.switchtolink();
 	}
